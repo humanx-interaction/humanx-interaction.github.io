@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+    content="Towards Immersive Human-X Interaction: A Real-Time Framework for Physically Plausible Motion Synthesis">
+  <meta name="keywords" content="Human-Human Interaction, Human Motion Generation, Dataset, Multimodal">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Human-X Interaction</title>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/regennet.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">
+                Towards Immersive Human-X Interaction: A Real-Time 
+                <br> 
+                Framework for Physically Plausible Motion Synthesis</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://curmack.github.io/">Kaiyang Ji</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://shiye21.github.io/">Ye Shi</a><sup>1,2,*</sup>,
+              </span>
+              <span class="author-block">
+                Zichen Jin<sup>1</sup>,
+              </span>
+              <span class="author-block">
+                Kangyi Chen<sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://xulan.github.io/">Lan Xu</a><sup>1,2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://yuexinma.me/">Yuexin Ma</a><sup>1,2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://www.yu-jingyi.com/">Jingyi Yu</a><sup>1,2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://faculty.sist.shanghaitech.edu.cn/faculty/wangjingya/">Jingya Wang</a><sup>1,2,*</sup>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>ShanghaiTech University,</span>
+              <span class="author-block"><sup>2</sup>Shanghai Engineering Research Center of Intelligent Vision and Imaging,</span>
+              <br>
+              <span class="author-block"><sup>*</sup>Corresponding Authors</span>
+            </div>
+            <!-- <div>( * denotes equal contribution. )</div> -->
+            <div class="is-size-3">ICCV 2025 Highlight</div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="https://humanx-interaction.github.io"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://humanx-interaction.github.io" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Video Link. -->
+                <span class="link-block">
+                <a href="https://humanx-interaction.github.io"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video(Coming Soon)</span>
+                </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/humanx-interaction/Human-X-Interaction"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code(Coming Soon)</span>
+                  </a>
+                </span>
+                <!-- Dataset Link. -->
+                <!-- <span class="link-block">
+                  <a href="https://github.com/liangxuy/ReGenNet"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="far fa-images"></i>
+                    </span>
+                    <span>Annotations</span>
+                  </a>
+                </span> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="./static/images/main-pic.png" class="interpolation-image" alt="Interpolate start reference image." />
+        <h2 class="subtitle has-text-centered">
+          Figure 1. We propose <b>Human-X</b>, the first framework designed to enable latency-free interaction between humans and diverse entities, including human-avatar, human-humanoid, and human-robot interaction.
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Real-time synthesis of physically plausible human interactions remains a critical challenge for immersive VR/AR systems and humanoid robotics. While existing methods demonstrate progress in kinematic motion generation, they often fail to address the fundamental tension between real-time responsiveness, physical feasibility, and safety requirements in dynamic human-machine interactions. We introduce Human-X, a novel framework designed to enable immersive and physically plausible human interactions across diverse entities, including human-avatar, human-humanoid, and human-robot systems. Unlike existing approaches that focus on post-hoc alignment or simplified physics, our method jointly predicts actions and reactions in real-time using an auto-regressive reaction diffusion planner, ensuring seamless synchronization and context-aware responses. To enhance physical realism and safety, we integrate an actor-aware motion tracking policy trained with reinforcement learning, which dynamically adapts to interaction partners’ movements while avoiding artifacts like foot sliding and penetration. Extensive experiments on the Inter-X and InterHuman datasets demonstrate significant improvements in motion quality, interaction continuity, and physical plausibility over state-of-the-art methods. Our framework is validated in real-world applications, including virtual reality interface for human-robot interaction, showcasing its potential for advancing human-robot collaboration.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+
+      <!-- Paper video. -->
+      <!--     <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div> -->
+      <!--/ Paper video. -->
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+
+      <!-- Inter-X Dataset. -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3 has-text-centered">Method</h2>
+          <img src="./static/images/pipeline.png" class="interpolation-image" alt="Interpolate start reference image." />
+          <h2 class="subtitle has-text-justified">
+            Figure 2.  Overview of our immersive real-time interaction synthesis pipeline:
+<b>(a) Actor Motion Capture</b>: A human actor's movements are recorded at 30 fps by an RGB-D camera and translated into 3D poses, which are then retargeted to a humanoid character.
+<b>(b) Realistic Reactor Motion Generation</b>: An auto-regressive diffusion model, guided by optional text prompts (e.g., “Dancing is what to do”), generates plausible reaction motions. These motions are tracked by an actor-aware controller, which uses proprioception signals to ensure realistic, synchronized interactions. <b>(c) Real-time VR Interface</b>: The generated and tracked motions are rendered in Isaac Gym, providing both a third-person view and a binocular VR view.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Visualization Results</h2>
+
+    <div class="columns is-vcentered is-multiline">
+      <div class="column is-half">
+        <img src="./static/images/compare_0_0.png"
+             class="interpolation-image"
+             alt="Interpolate start reference image." />
+      </div>
+      <div class="column is-half">
+        <img src="./static/images/compare_1_1.png"
+             class="interpolation-image"
+             alt="Interpolate start reference image." />
+      </div>
+    </div>
+
+    <h2 class="subtitle has-text-justified">
+      Figure 3. Visualization of human reaction synthesis results.
+      <span style="color:#00b7ff">Blue</span> for actors and
+      <span style="color:#ff6600">Red</span> for reactors.
+      In the tasks of hitting in the face and handshaking, our method achieves more complete hand contact, and the foot movement appears more natural, as highlighted in the red and green circles.
+    </h2>
+
+    <img src="./static/images/human-robot.png" class="interpolation-image" alt="Interpolate start reference image." />
+    <h2 class="subtitle has-text-centered">
+      Figure 4. Visualization results on Human-Robot Interaction.
+    </h2>
+  </div>
+</section>
+
+  <!-- <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{xu2023actformer,
+      author    = {Xu, Liang and Song, Ziyang and Wang, Dongliang and Su, Jing and Fang, Zhicheng and Ding, Chenjing and Gan, Weihao and Yan, Yichao and Jin, Xin and Yang, Xiaokang and Zeng, Wenjun and Wu, Wei},
+      title     = {ActFormer: A GAN-based Transformer towards General Action-Conditioned 3D Human Motion Generation},
+      journal   = {ICCV},
+      year      = {2023},
+    }</code></pre>
+    </div>
+  </section> -->
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              Thanks for the template from <a href="https://github.com/nerfies/nerfies.github.io"> Nerfies</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

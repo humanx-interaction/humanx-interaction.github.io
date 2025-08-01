@@ -1,1 +1,1 @@
-# humanx-interaction.github.io
+This is the repository that contains source code for the [Human-X Interaction website](https://humanx-interaction.github.io).
